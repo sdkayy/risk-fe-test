@@ -32,3 +32,10 @@ export const TOKEN_LIST: IToken[] = [
     decimals: 6,
   },
 ];
+
+export function normalize(value: string, decimals = 18) {
+  if (value) {
+    return parseFloat(value) / 10 ** decimals;
+  }
+  return 0;
+}

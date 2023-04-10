@@ -35,15 +35,17 @@ export interface AppStateContext {
   tokenOne: Partial<IToken>;
   tokenTwo: Partial<IToken>;
   updateToken: (newToken: Partial<IToken>, tokenIndex: number) => void;
+  asks: Map<string, IOrder>;
+  bids: Map<string, IOrder>;
 }
 
 const AppStateContext = createContext<any>({});
 
 export const useAppState = () => {
-  const { tokenOne, tokenTwo, updateToken } =
+  const { tokenOne, tokenTwo, updateToken, asks, bids } =
     useContext<AppStateContext>(AppStateContext);
 
-  return { tokenOne, tokenTwo, updateToken };
+  return { tokenOne, tokenTwo, updateToken, asks, bids };
 };
 
 export const AppStateProvider = ({ children }: any) => {

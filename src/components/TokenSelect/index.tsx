@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { ChevronDown } from '../Icons/ChevronDown';
 import { IToken } from '@risk/hooks/useAppState';
 import { useSpring, animated } from 'react-spring';
-import { TOKEN_LIST } from '@risk/utils/tokenList';
+import { TOKEN_LIST } from '@risk/utils/token';
 import { TokenIcon } from '../Icons/icon';
 
 interface TokenSelectProps {

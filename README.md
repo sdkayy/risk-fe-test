@@ -1,3 +1,5 @@
+CURRENTLY WIP
+
 React/UI Engineer technical test task.
 
 Implement a simple Next.JS application, share the source code via GitHub, and deploy it (using, e.g., render.com or Netlify) so that we can test it.
